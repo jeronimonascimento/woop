@@ -22,6 +22,7 @@ class EventService {
          AF.request(url)
              .validate()
              .responseDecodable(of: [Event].self) { response in
+                print(response.response!.statusCode)
                  switch response.result {
                  case .success(let events):
                      completion(.success(events))

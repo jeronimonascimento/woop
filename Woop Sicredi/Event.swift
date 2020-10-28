@@ -8,13 +8,13 @@
 import Foundation
 
 struct Event: Codable {
-    var people: [Any]
+    //var people: [Any]
     var date: Int
-    var description: String
-    var image: String
-    var longitude: String
-    var latitude: String
-    var price: Float
+//    var description: String
+//    var image: String
+//    var longitude: String
+//    var latitude: String
+//    var price: Double
     var title: String
     var id: String
     
