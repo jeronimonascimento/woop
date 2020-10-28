@@ -10,11 +10,11 @@ import Foundation
 struct Event: Codable {
     //var people: [Any]
     var date: Int
-//    var description: String
-//    var image: String
-//    var longitude: String
-//    var latitude: String
-//    var price: Double
+    var description: String
+    var image: String
+    var longitude: Float
+    var latitude: Float
+    var price: Double
     var title: String
     var id: String
     

@@ -9,7 +9,6 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var eventTitle: UILabel!
     @IBOutlet weak var eventDate: UILabel!
     
@@ -27,6 +26,7 @@ class EventTableViewCell: UITableViewCell {
     func dataBind(event: Event){
         self.eventTitle.text = event.title
         self.eventDate.text = String(event.date)
+        //self.eventImage.image = 
     }
 
 }

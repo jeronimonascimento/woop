@@ -21,4 +21,15 @@ class EventWireframe {
         presenter.presenterOutput = vc
 
     }
+    
+    static func setUp(vc: EventDetailViewController){
+        let interactor = EventInteractor()
+        let wireframe  = EventWireframe()
+        let presenter  = EventPresenter(wireframe: wireframe, interactor: interactor)
+
+        vc.presenter = presenter
+        interactor.interactorOutput = presenter
+        presenter.presenterOutput = vc
+
+    }
 }

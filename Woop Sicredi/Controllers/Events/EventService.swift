@@ -31,4 +31,14 @@ class EventService {
                  }
          }
      }
+    
+    func getImageFromUrl(url: String, completion: @escaping (Result<Data>) -> Void){
+        AF.request(url).response { response in
+            if let data = response.data {
+                completion(.success(data))
+            } else {
+                print("Data is nil. I don't know what to do :(")
+            }
+        }
+    }
 }

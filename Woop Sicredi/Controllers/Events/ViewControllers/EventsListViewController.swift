@@ -21,6 +21,14 @@ class EventsListViewController: ViewController {
         self.presenter.fetchEvents()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "eventDetailSegue" {
+            if let vc = segue.destination as? EventDetailViewController {
+                vc.event = sender as? Event
+            }
+        }
+    }
 
 }
 
@@ -41,13 +49,20 @@ extension EventsListViewController: UITableViewDelegate, UITableViewDataSource {
         return 60.0
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let event = self.eventList[indexPath.row]
+        self.performSegue(withIdentifier: "eventDetailSegue", sender: event)
+    }
 }
 
 extension EventsListViewController: EventPresenterOutput {
     func successEvents(events: [Event]) {
         self.eventList = events
         self.tbView.reloadData()
+    }
+    
+    func successImage(data: Data) {
+        return
     }
     
     func errorEvents(message: String) {

@@ -9,14 +9,24 @@ import Foundation
 
 protocol EventPresenterInput: class {
     func fetchEvents()
+    func fetchEventImage(url: String)
 }
 
 protocol EventPresenterOutput: class {
     func successEvents(events: [Event])
+    func successImage(data: Data)
     func errorEvents(message: String)
 }
 
 class EventPresenter:EventPresenterInput, EventInteractorOutput {
+    func fetchEventImage(url: String) {
+        self.interactor?.getEventImage(url: url)
+    }
+    
+    func successImage(data: Data) {
+        self.presenterOutput?.successImage(data:data)
+    }
+    
     
     private var interactor: EventInteractorInput?
     private var wireframe: EventWireframe?
