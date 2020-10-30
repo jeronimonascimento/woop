@@ -25,7 +25,14 @@ class EventTableViewCell: UITableViewCell {
     
     func dataBind(event: Event){
         self.eventTitle.text = event.title
-        self.eventDate.text = String(event.date)
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd/MM/yyyy"
+
+        let date = Date.init(timeIntervalSince1970: TimeInterval(event.date))
+        let formattedDate = dateFormatterPrint.string(from: date)
+        self.eventDate.text = formattedDate
+        
+        //self.eventDate.text = String(dateFormatterPrint.date(from: date))
         //self.eventImage.image = 
     }
 
