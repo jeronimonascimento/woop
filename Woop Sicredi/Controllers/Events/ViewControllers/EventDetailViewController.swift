@@ -32,6 +32,7 @@ class EventDetailViewController: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         //assign button to navigationbar
         self.navigationItem.rightBarButtonItem = barButton
+        self.navigationItem.title = "Detalhe do evento"
 
   
         // Do any additional setup after loading the view.
@@ -41,6 +42,7 @@ class EventDetailViewController: UIViewController {
         if segue.identifier == "checkinSegue" {
             if let vc = segue.destination as? EventCheckinViewController {
                 vc.event = sender as! Event
+                vc.eventCheckinDelegate = self
             }
         }
     }
@@ -134,5 +136,10 @@ extension EventDetailViewController: EventPresenterOutput {
         print(message)
     }
     
-    
+}
+
+extension EventDetailViewController: EventCheckinHandler {
+    func onCheckinSuccess() {
+        self.showToast("Inscrição realizada com sucesso!")
+    }
 }

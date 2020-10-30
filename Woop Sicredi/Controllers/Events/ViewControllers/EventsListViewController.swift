@@ -19,6 +19,7 @@ class EventsListViewController: ViewController {
         self.tbView.delegate = self
         self.tbView.dataSource = self
         self.presenter.fetchEvents()
+        self.navigationItem.title = "Eventos"
         // Do any additional setup after loading the view.
     }
     

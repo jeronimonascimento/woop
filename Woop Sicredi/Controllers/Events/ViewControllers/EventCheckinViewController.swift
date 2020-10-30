@@ -7,12 +7,18 @@
 
 import UIKit
 
+protocol EventCheckinHandler: class {
+    func onCheckinSuccess()
+}
+
 class EventCheckinViewController: UIViewController {
 
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
     var presenter: EventPresenterInput!
     var event: Event!
+    
+    var eventCheckinDelegate: EventCheckinHandler!
     override func viewDidLoad() {
         super.viewDidLoad()
         EventWireframe.setUp(vc: self)
@@ -40,7 +46,9 @@ class EventCheckinViewController: UIViewController {
 
 extension EventCheckinViewController: EventPresenterOutput {
     func successGetEventById(event: Event) {
-        print(event)
+        self.dismiss(animated: true) {
+            self.eventCheckinDelegate.onCheckinSuccess()
+        }
     }
     
     func successCheckin() {
