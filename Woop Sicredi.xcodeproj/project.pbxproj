@@ -12,12 +12,20 @@
 		AE60E8B62548F24000EB393E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8B52548F24000EB393E /* SceneDelegate.swift */; };
 		AE60E8B82548F24000EB393E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8B72548F24000EB393E /* ViewController.swift */; };
 		AE60E8BB2548F24000EB393E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE60E8B92548F24000EB393E /* Main.storyboard */; };
-		AE60E8BD2548F24300EB393E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE60E8BC2548F24300EB393E /* Assets.xcassets */; };
 		AE60E8C02548F24300EB393E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE60E8BE2548F24300EB393E /* LaunchScreen.storyboard */; };
 		AE60E8CD2548F30F00EB393E /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE60E8CC2548F30F00EB393E /* Events.storyboard */; };
 		AE60E8D02548F45300EB393E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8CF2548F45300EB393E /* Event.swift */; };
 		AE60E8D32548F50000EB393E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8D22548F50000EB393E /* EventService.swift */; };
 		AE60E8D62548F67300EB393E /* EventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8D52548F67300EB393E /* EventInteractor.swift */; };
+		AE60E8DE2548F8C000EB393E /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8DD2548F8C000EB393E /* EventPresenter.swift */; };
+		AE60E8E22548FA7F00EB393E /* EventWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8E12548FA7F00EB393E /* EventWireframe.swift */; };
+		AE60E8E62548FDF200EB393E /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8E52548FDF200EB393E /* EventsListViewController.swift */; };
+		AE60E8E92548FE2300EB393E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60E8E82548FE2300EB393E /* EventTableViewCell.swift */; };
+		AEDF7D98254B8D7800BAF51C /* EventCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF7D97254B8D7800BAF51C /* EventCheckinViewController.swift */; };
+		AEDF7D9C254B901D00BAF51C /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF7D9B254B901D00BAF51C /* Extensions+UIViewController.swift */; };
+		AEDF7DA4254B941B00BAF51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDF7DA3254B941B00BAF51C /* Assets.xcassets */; };
+		AEDF7DA7254B953800BAF51C /* EventCheckin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF7DA6254B953800BAF51C /* EventCheckin.swift */; };
+		AEFD180025491110009D596D /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD17FF25491110009D596D /* EventDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +36,21 @@
 		AE60E8B52548F24000EB393E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AE60E8B72548F24000EB393E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE60E8BA2548F24000EB393E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE60E8BC2548F24300EB393E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE60E8BF2548F24300EB393E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE60E8C12548F24300EB393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE60E8CC2548F30F00EB393E /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		AE60E8CF2548F45300EB393E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		AE60E8D22548F50000EB393E /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		AE60E8D52548F67300EB393E /* EventInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInteractor.swift; sourceTree = "<group>"; };
+		AE60E8DD2548F8C000EB393E /* EventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
+		AE60E8E12548FA7F00EB393E /* EventWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWireframe.swift; sourceTree = "<group>"; };
+		AE60E8E52548FDF200EB393E /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
+		AE60E8E82548FE2300EB393E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		AEDF7D97254B8D7800BAF51C /* EventCheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCheckinViewController.swift; sourceTree = "<group>"; };
+		AEDF7D9B254B901D00BAF51C /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
+		AEDF7DA3254B941B00BAF51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEDF7DA6254B953800BAF51C /* EventCheckin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCheckin.swift; sourceTree = "<group>"; };
+		AEFD17FF25491110009D596D /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		C29F2F9A54C1E28D841F61F3 /* Pods_Woop_Sicredi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Woop_Sicredi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,19 +96,75 @@
 		AE60E8B22548F24000EB393E /* Woop Sicredi */ = {
 			isa = PBXGroup;
 			children = (
+				AEDF7DA3254B941B00BAF51C /* Assets.xcassets */,
+				AEDF7D9A254B900100BAF51C /* Extensions */,
+				AEFD180225491371009D596D /* Model */,
+				AE60E8DC2548F89A00EB393E /* Controllers */,
 				AE60E8B32548F24000EB393E /* AppDelegate.swift */,
 				AE60E8B52548F24000EB393E /* SceneDelegate.swift */,
 				AE60E8B72548F24000EB393E /* ViewController.swift */,
 				AE60E8B92548F24000EB393E /* Main.storyboard */,
-				AE60E8BC2548F24300EB393E /* Assets.xcassets */,
 				AE60E8BE2548F24300EB393E /* LaunchScreen.storyboard */,
 				AE60E8C12548F24300EB393E /* Info.plist */,
 				AE60E8CC2548F30F00EB393E /* Events.storyboard */,
-				AE60E8CF2548F45300EB393E /* Event.swift */,
-				AE60E8D22548F50000EB393E /* EventService.swift */,
-				AE60E8D52548F67300EB393E /* EventInteractor.swift */,
 			);
 			path = "Woop Sicredi";
+			sourceTree = "<group>";
+		};
+		AE60E8DC2548F89A00EB393E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD180425491398009D596D /* Events */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEDF7D9A254B900100BAF51C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AEDF7D9B254B901D00BAF51C /* Extensions+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEFD180225491371009D596D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE60E8CF2548F45300EB393E /* Event.swift */,
+				AEDF7DA6254B953800BAF51C /* EventCheckin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEFD180425491398009D596D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD1806254913AE009D596D /* Cells */,
+				AEFD1805254913A4009D596D /* ViewControllers */,
+				AE60E8E12548FA7F00EB393E /* EventWireframe.swift */,
+				AE60E8DD2548F8C000EB393E /* EventPresenter.swift */,
+				AE60E8D52548F67300EB393E /* EventInteractor.swift */,
+				AE60E8D22548F50000EB393E /* EventService.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		AEFD1805254913A4009D596D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE60E8E52548FDF200EB393E /* EventsListViewController.swift */,
+				AEFD17FF25491110009D596D /* EventDetailViewController.swift */,
+				AEDF7D97254B8D7800BAF51C /* EventCheckinViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AEFD1806254913AE009D596D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AE60E8E82548FE2300EB393E /* EventTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		CB1DD215780FAE97904ABB5E /* Frameworks */ = {
@@ -164,7 +236,7 @@
 			files = (
 				AE60E8C02548F24300EB393E /* LaunchScreen.storyboard in Resources */,
 				AE60E8CD2548F30F00EB393E /* Events.storyboard in Resources */,
-				AE60E8BD2548F24300EB393E /* Assets.xcassets in Resources */,
+				AEDF7DA4254B941B00BAF51C /* Assets.xcassets in Resources */,
 				AE60E8BB2548F24000EB393E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,10 +291,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE60E8D02548F45300EB393E /* Event.swift in Sources */,
+				AE60E8DE2548F8C000EB393E /* EventPresenter.swift in Sources */,
+				AEDF7D9C254B901D00BAF51C /* Extensions+UIViewController.swift in Sources */,
 				AE60E8D62548F67300EB393E /* EventInteractor.swift in Sources */,
+				AEDF7DA7254B953800BAF51C /* EventCheckin.swift in Sources */,
+				AE60E8E22548FA7F00EB393E /* EventWireframe.swift in Sources */,
 				AE60E8B82548F24000EB393E /* ViewController.swift in Sources */,
 				AE60E8B42548F24000EB393E /* AppDelegate.swift in Sources */,
 				AE60E8D32548F50000EB393E /* EventService.swift in Sources */,
+				AE60E8E62548FDF200EB393E /* EventsListViewController.swift in Sources */,
+				AE60E8E92548FE2300EB393E /* EventTableViewCell.swift in Sources */,
+				AEFD180025491110009D596D /* EventDetailViewController.swift in Sources */,
+				AEDF7D98254B8D7800BAF51C /* EventCheckinViewController.swift in Sources */,
 				AE60E8B62548F24000EB393E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

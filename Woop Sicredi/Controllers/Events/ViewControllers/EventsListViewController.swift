@@ -56,6 +56,14 @@ extension EventsListViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension EventsListViewController: EventPresenterOutput {
+    func successGetEventById(event: Event) {
+        return
+    }
+    
+    func successCheckin() {
+        return
+    }
+    
     func successEvents(events: [Event]) {
         self.eventList = events
         self.tbView.reloadData()

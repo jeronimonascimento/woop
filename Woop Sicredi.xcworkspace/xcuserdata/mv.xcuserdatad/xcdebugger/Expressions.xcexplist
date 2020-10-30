@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in EventService.getEvents(completion:):EventService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.response?.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in EventService.checkin(eventCheckin:completion:):EventService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.reponse?.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EventCheckinViewController.performCheckin(_:):EventCheckinViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "EventService.getEventById(eventId:completion:):EventService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Int(eventId)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
